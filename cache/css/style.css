@@ -1,0 +1,94 @@
+html,
+body {
+	font-size: 100%;
+	background: #fff;
+	font-family: "Times New Roman", Times, serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+	font-family: 'Cormorant Infant', serif;
+}
+
+p {
+	margin: 0;
+}
+
+ul,
+label {
+	margin: 0;
+	padding: 0;
+}
+
+body a:hover {
+	text-decoration: none;
+}
+
+.btn-group {
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+.row{
+	margin: 10px 0;
+}
+aside {
+	min-height: 100%;
+	position: fixed;
+	width: 220px;
+	background-color: #199EB8;
+	border-color: #199EB8;
+	z-index: 9;
+	padding-top: 20px;
+	text-align: left;
+
+}
+aside a, aside .btn{
+	display: block;
+	padding: 5px 0;
+	color: #fff;
+	font-family: 'Cormorant Infant', serif;
+	text-align: center;
+	font-size: 22px;
+}
+main{
+	width: 100%;
+}
+/* Page */
+.investors {
+	text-align: justify;
+}
+
+form label.col-md-12
+{
+	margin-left: 0;
+	padding-left: 0;
+}
+
+form label.col-md-12+input
+{
+	width: 100%;
+}
+
+form .borderForm
+{
+	border: 1px solid gray;
+}
+
+header {
+	background-color: black;
+	padding: 20px;
+	color: white;
+}
+
+header a {
+	color: white;
+}
+
+header a:hover {
+	color: grey;
+}

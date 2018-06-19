@@ -1,0 +1,19 @@
+RewriteEngine On
+Options -Indexes
+RewriteBase /
+RewriteRule ^.htaccess$ - [F]
+RewriteRule ^cache/ - [L]
+RewriteRule ^([^/]+) index.php
+
+#RewriteRule ^archive/ - [L]
+#RewriteRule ^templates/ - [L]
+#RewriteRule ^([^/]+)/([^/]+)$ index.php?group=$1&page=$2
+
+#RewriteCond %{HTTPS} off
+#RewriteCond %{HTTP:X-Forwarded-Proto} !https
+#RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+
+ErrorDocument 500 /static/notfound
+ErrorDocument 404 /static/notfound
+ErrorDocument 403 /static/notfound

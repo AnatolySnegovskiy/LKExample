@@ -1,0 +1,85 @@
+
+
+.Container {
+    padding: 0;
+    margin: 0;
+}
+
+.Container li {
+    list-style-type: none;
+}
+
+
+/* indent for all tree children excepts root */
+.Node {
+    background-image : url(/cache/africangold/images/tree/i.gif);
+    background-position : top left;
+    background-repeat : repeat-y;
+    margin-left: 18px;
+    zoom: 1;
+}
+
+.IsRoot {
+    margin-left: 0;
+}
+
+
+/* left vertical line (grid) for all nodes */
+.IsLast {
+    background-image: url(/cache/africangold/images/tree/i_half.gif);
+    background-repeat : no-repeat;
+}
+
+.ExpandOpen .Expand {
+    background-image: url(/cache/africangold/images/tree/expand_minus.gif);
+}
+
+/* closed is higher priority than open */
+.ExpandClosed .Expand {
+    background-image: url(/cache/africangold/images/tree/expand_plus.gif);
+}
+
+/* highest priority */
+.ExpandLeaf .Expand {
+    background-image: url(/cache/africangold/images/tree/expand_leaf.gif);
+}
+
+.Content {
+    min-height: 18px;
+    margin-left:18px;
+	font-size:20px;
+    text-align: left;
+}
+
+* html .Content {
+    height: 18px;
+}
+
+.Expand {
+    width: 18px;
+    height: 18px;
+    float: left;
+}
+
+
+.ExpandOpen .Container {
+        display: block;
+}
+
+.ExpandClosed .Container {
+        display: none;
+}
+
+.ExpandOpen .Expand, .ExpandClosed .Expand {
+        cursor: pointer;
+}
+.ExpandLeaf .Expand {
+        cursor: auto;
+}
+
+.ExpandLoading   {
+    width: 18px;
+    height: 18px;
+    float: left;
+    background-image: url(/cache/africangold/images/tree/expand_loading.gif);
+}

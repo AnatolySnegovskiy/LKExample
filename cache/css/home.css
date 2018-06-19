@@ -1,0 +1,71 @@
+html,
+body {
+	font-size: 100%;
+	background: #fff;
+	font-family: "Times New Roman", Times, serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+	font-family: 'Cormorant Infant', serif;
+}
+
+
+.jumbotron {
+    background: inherit;
+}
+
+.first {
+    width: 100%;
+    height: 100vh;
+    background-image: url("/cache/images/home/slide1.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.first h2 {
+    padding-top: 5vh;
+    font-size: 72px;
+}
+
+.navbar-default {
+    background-color: #199EB8;
+    border-color: #199EB8;
+    color: #fff;
+}
+
+.navbar-default .navbar-nav > li > a {
+    cursor: pointer;
+    color: #fff;
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover {
+    color: #fff;
+    background-color: #0b8198;
+}
+
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:focus, .navbar-default .navbar-nav > .open > a:hover {
+    color: #fff;
+    background-color: #0b8198;
+}
+
+.second-image {
+    width: 100%;
+    height: 50vh;
+    background-image: url("/cache/images/home/slide2.jpg");
+    background-size: cover;
+    background-position: top center;
+}
+.slider.slider-horizontal {
+    width: 100%;
+}
+@media screen and (min-width: 768px) {
+    .jumbotron .h1, .jumbotron h1 {
+        font-size: 48px;
+    }
+}
